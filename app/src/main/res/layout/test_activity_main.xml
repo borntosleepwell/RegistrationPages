@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FF4628"
+    android:padding="24dp"
+    android:gravity="center_vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/sign_up"
+        android:textSize="32dp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:gravity="center"
+        android:layout_marginBottom="32dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:hint="@string/hint_username"
+        android:background="@drawable/bg_edittext_rounded"
+        android:paddingStart="24dp"
+        android:paddingEnd="24dp"
+        android:inputType="textPersonName"
+        android:layout_marginBottom="16dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:hint="@string/hint_email"
+        android:background="@drawable/bg_edittext_rounded"
+        android:paddingStart="24dp"
+        android:paddingEnd="24dp"
+        android:inputType="textEmailAddress"
+        android:layout_marginBottom="16dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:hint="@string/hint_password"
+        android:background="@drawable/bg_edittext_rounded"
+        android:paddingStart="24dp"
+        android:paddingEnd="24dp"
+        android:inputType="textPassword"
+        android:layout_marginBottom="24dp"/>
+
+    <android.widget.Button
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@drawable/bg_button_rounded"
+        android:text="@string/btn_daftar"
+        android:textColor="#FFFFFF"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+</LinearLayout>

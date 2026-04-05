@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/bg_cream"
+    android:padding="32dp"
+    android:id="@+id/activity_registration">
+
+    <TextView
+        android:id="@+id/txtSign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Hello Human!"
+        android:textSize="48dp"
+        android:textColor="@color/drk_color"
+        android:fontFamily="@font/ppmondwest_regular"
+        android:layout_marginTop="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <EditText
+        android:id="@+id/etNama2"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@drawable/bg_edittext_rounded"
+        android:paddingStart="24dp"
+        android:paddingEnd="24dp"
+        android:layout_marginTop="32dp"
+        android:textColor="@color/drk_color"
+        android:hint="enter your name"
+        android:textColorHint="#D9D9D9"
+        android:fontFamily="@font/neuemontreal_medium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtSign" />
+
+    <EditText
+        android:id="@+id/etNIM2"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@drawable/bg_edittext_rounded"
+        android:paddingStart="24dp"
+        android:paddingEnd="24dp"
+        android:layout_marginTop="24dp"
+        android:textColor="@color/drk_color"
+        android:hint="enter your NIM"
+        android:textColorHint="#D9D9D9"
+        android:fontFamily="@font/neuemontreal_medium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etNama2" />
+    
+    <Spinner
+        android:id="@+id/spinProdi"
+        android:entries="@array/prodi_array"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@drawable/bg_edittext_rounded"
+        android:paddingStart="24dp"
+        android:paddingEnd="24dp"
+        android:layout_marginTop="24dp"
+        android:textColor="@color/drk_color"
+        android:hint="enter your study program"
+        android:textColorHint="#D9D9D9"
+        android:fontFamily="@font/neuemontreal_medium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etNIM2"/>
+
+    <RadioButton
+        android:id="@+id/rbMale"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="Male"
+        android:textColor="@color/drk_color"
+        android:fontFamily="@font/neuemontreal_medium"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintTop_toBottomOf="@id/spinProdi"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <RadioButton
+        android:id="@+id/rbFemale"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="Female"
+        android:textColor="@color/drk_color"
+        android:fontFamily="@font/neuemontreal_medium"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="15dp"
+        app:layout_constraintTop_toBottomOf="@id/spinProdi"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/txtHobi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="Hobby:"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="12dp"
+        android:textColor="@color/drk_color"
+        android:fontFamily="@font/neuemontreal_medium"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/spinProdi"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <LinearLayout
+        android:id="@+id/llHobi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="18dp"
+        app:layout_constraintTop_toBottomOf="@id/txtHobi">
+        <CheckBox
+            android:id="@+id/cbMusic"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Music"
+            android:textColor="@color/drk_color"
+            android:fontFamily="@font/neuemontreal_medium"/>
+        <CheckBox
+            android:id="@+id/cbMovie"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Movie"
+            android:textColor="@color/drk_color"
+            android:fontFamily="@font/neuemontreal_medium"/>
+        <CheckBox
+            android:id="@+id/cbSport"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Sport"
+            android:textColor="@color/drk_color"
+            android:fontFamily="@font/neuemontreal_medium"/>
+    </LinearLayout>
+
+    <android.widget.Button
+        android:textAllCaps="false"
+        android:shadowColor="@color/black"
+        android:shadowRadius="@integer/material_motion_duration_medium_1"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:id="@+id/btnLogin"
+        android:background="@drawable/bg_button_rounded"
+        android:layout_marginTop="32dp"
+        android:text="register now"
+        android:textColor="#FFF3E6"
+        android:textSize="32dp"
+        android:fontFamily="@font/ppneuebit_bold"
+        app:layout_constraintTop_toBottomOf="@id/llHobi"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

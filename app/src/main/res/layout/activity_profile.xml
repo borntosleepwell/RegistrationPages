@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_cream"
+    android:padding="24dp">
+
+    <TextView
+        android:id="@+id/txtHiUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hi, [User]"
+        android:textColor="@color/drk_color"
+        android:textSize="50dp"
+        android:fontFamily="@font/ppmondwest_regular"
+        android:layout_marginTop="60dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <ImageView
+        android:id="@+id/imgProfile"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/bg_circle"
+        android:src="@drawable/ic_user_24"
+        app:tint="@color/drk_color"
+        android:padding="12dp"
+        app:layout_constraintTop_toBottomOf="@id/txtHiUser"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="20dp"
+        android:layout_marginTop="32dp"
+        app:cardBackgroundColor="#FFF9EB"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imgProfile"
+        android:padding="20dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="24dp">
+
+            <LinearLayout
+                android:id="@+id/dataKiri"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/dataKanan"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Name"
+                    android:textColor="#B1B1B1"
+                    android:fontFamily="@font/neuemontreal_medium"
+                    android:textSize="14dp"/>
+                <TextView
+                    android:id="@+id/hasilNama"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="[Username]"
+                    android:textSize="16dp"
+                    android:textColor="@color/drk_color"
+                    android:fontFamily="@font/neuemontreal_medium"
+                    android:layout_marginBottom="12dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="NIM"
+                    android:textColor="#B1B1B1"
+                    android:fontFamily="@font/neuemontreal_medium"
+                    android:textSize="14dp"/>
+                <TextView
+                    android:id="@+id/hasilNIM"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="[NIM]"
+                    android:textSize="16dp"
+                    android:textColor="@color/drk_color"
+                    android:fontFamily="@font/neuemontreal_medium"
+                    android:layout_marginBottom="12dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Prodi"
+                    android:textColor="#B1B1B1"
+                    android:fontFamily="@font/neuemontreal_medium"
+                    android:textSize="14dp"/>
+                <TextView
+                    android:id="@+id/hasilProdi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="[Prodi]"
+                    android:textSize="16dp"
+                    android:textColor="@color/drk_color"
+                    android:fontFamily="@font/neuemontreal_medium"
+                    android:layout_marginBottom="12dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Gender"
+                    android:textColor="#B1B1B1"
+                    android:fontFamily="@font/neuemontreal_medium"
+                    android:textSize="14dp"/>
+                <TextView
+                    android:id="@+id/hasilGender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="[Gender]"
+                    android:textSize="16dp"
+                    android:textColor="@color/drk_color"
+                    android:fontFamily="@font/neuemontreal_medium"
+                    android:layout_marginBottom="12dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/dataKanan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hobi"
+                    android:textColor="#B1B1B1"
+                    android:fontFamily="@font/neuemontreal_medium"
+                    android:textSize="14dp"/>
+                <TextView
+                    android:id="@+id/hasilHobi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Hobi"
+                    android:textColor="@color/drk_color"
+                    android:fontFamily="@font/neuemontreal_medium"
+                    android:layout_marginBottom="12dp"/>
+            </LinearLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

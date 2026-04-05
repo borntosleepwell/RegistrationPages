@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/bg_cream"
+    android:id="@+id/real_layout"
+    android:padding="32dp">
+
+    <TextView
+        android:id="@+id/txtWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Hi, Welcome back"
+        android:textColor="@color/drk_color"
+        android:textSize="49dp"
+        android:fontFamily="@font/ppmondwest_regular"
+        android:layout_marginTop="250dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etNama"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@drawable/bg_edittext_rounded"
+        android:paddingStart="24dp"
+        android:paddingEnd="24dp"
+        android:layout_marginTop="32dp"
+        android:textColor="@color/drk_color"
+        android:hint="enter your name"
+        android:textColorHint="#D9D9D9"
+        android:fontFamily="@font/neuemontreal_medium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtWelcome" />
+
+    <EditText
+        android:id="@+id/etNim"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@drawable/bg_edittext_rounded"
+        android:paddingStart="24dp"
+        android:paddingEnd="24dp"
+        android:layout_marginTop="32dp"
+        android:textColor="@color/drk_color"
+        android:hint="enter your NIM"
+        android:textColorHint="#D9D9D9"
+        android:fontFamily="@font/neuemontreal_medium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etNama" />
+
+    <android.widget.Button
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:id="@+id/btnLogin"
+        android:background="@drawable/bg_button_rounded"
+        android:layout_marginTop="32dp"
+        android:text="LOGIN"
+        android:textColor="#FFF3E6"
+        android:textSize="32dp"
+        android:fontFamily="@font/ppneuebit_bold"
+        app:layout_constraintTop_toBottomOf="@id/etNim"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:id="@+id/signtxt"
+        android:text="Don't have an account? Sign here"
+        android:textColor="@color/drk_color"
+        android:textSize="14dp"
+        android:gravity="center"
+        android:fontFamily="@font/neuemontreal_light"
+        app:layout_constraintTop_toBottomOf="@id/btnLogin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
