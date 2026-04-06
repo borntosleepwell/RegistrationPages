@@ -53,10 +53,10 @@ class RegistrationActivity : AppCompatActivity(){
 
             // nilai hobi
             val hobiFix = mutableListOf<String>()
+            hobiFix.joinToString(", ")
             if (cbMusic.isChecked) hobiFix.add("Music")
             if (cbMovie.isChecked) hobiFix.add("Movie")
             if (cbSport.isChecked) hobiFix.add("Sport")
-            val hobiInput = hobiFix.joinToString(", ")
 
             // Bagian parcelable
             val userData = User(
