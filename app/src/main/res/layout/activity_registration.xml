@@ -77,6 +77,7 @@
         android:textSize="20dp"
         android:text="Male"
         android:textColor="@color/drk_color"
+        app:buttonTint="@color/drk_color"
         android:fontFamily="@font/neuemontreal_medium"
         android:layout_marginTop="5dp"
         android:layout_marginStart="10dp"
@@ -90,6 +91,7 @@
         android:textSize="20dp"
         android:text="Female"
         android:textColor="@color/drk_color"
+        app:buttonTint="@color/drk_color"
         android:fontFamily="@font/neuemontreal_medium"
         android:layout_marginTop="5dp"
         android:layout_marginEnd="15dp"
@@ -124,6 +126,7 @@
             android:layout_weight="1"
             android:text="Music"
             android:textColor="@color/drk_color"
+            android:buttonTint="@color/drk_color"
             android:fontFamily="@font/neuemontreal_medium"/>
         <CheckBox
             android:id="@+id/cbMovie"
@@ -132,6 +135,7 @@
             android:layout_weight="1"
             android:text="Movie"
             android:textColor="@color/drk_color"
+            android:buttonTint="@color/drk_color"
             android:fontFamily="@font/neuemontreal_medium"/>
         <CheckBox
             android:id="@+id/cbSport"
@@ -140,6 +144,7 @@
             android:layout_weight="1"
             android:text="Sport"
             android:textColor="@color/drk_color"
+            android:buttonTint="@color/drk_color"
             android:fontFamily="@font/neuemontreal_medium"/>
     </LinearLayout>
 
