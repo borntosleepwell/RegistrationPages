@@ -152,7 +152,7 @@
         android:id="@+id/btnLogin"
         android:background="@drawable/bg_button_rounded"
         android:layout_marginTop="32dp"
-        android:text="register now"
+        android:text="show profile"
         android:textColor="#FFF3E6"
         android:textSize="32dp"
         android:fontFamily="@font/ppneuebit_bold"
