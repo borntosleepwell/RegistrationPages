@@ -32,7 +32,7 @@ class RegistrationActivity : AppCompatActivity(){
         btnRegister.setOnClickListener {
             val namaInput = etNama.text.toString()
             val nimInput = etNIM.text.toString()
-            val prodiInput = spinProdi.selectedItem.toString() ?: ""
+            val prodiInput = spinProdi.selectedItem.toString()
 
             // Validasi Nama NIM dan Gender
             if(namaInput.isEmpty()){
