@@ -11,6 +11,7 @@ Aplikasi ini merupakan contoh implementasi antarmuka pengguna (UI) sederhana unt
 - **Input NIM**: Menggunakan `EditText` dengan tipe input angka (`number`).
 - **Tombol Register**: Tombol untuk memproses pendaftaran.
 - **Edge-to-Edge**: Mendukung tampilan layar penuh yang modern.
+- **Journal Page**: User dapat menambahkan journal ke dalam aplikasi.
 
 ## Teknologi yang Digunakan
 - **Bahasa**: Kotlin
