@@ -154,5 +154,19 @@
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
+    <android.widget.Button
+        android:id="@+id/btnGoToJournal"
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:layout_marginTop="16dp"
+        android:paddingStart="32dp"
+        android:paddingEnd="32dp"
+        android:background="@drawable/bg_button_rounded"
+        android:text="journal"
+        android:textColor="#FFF3E6"
+        android:textSize="24dp"
+        android:fontFamily="@font/ppneuebit_bold"
+        app:layout_constraintTop_toBottomOf="@id/cardProfile"
+        app:layout_constraintEnd_toEndOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

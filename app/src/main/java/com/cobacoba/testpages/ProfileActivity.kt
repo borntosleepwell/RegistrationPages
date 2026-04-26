@@ -1,6 +1,8 @@
 package com.cobacoba.testpages
 
+import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 class ProfileActivity : AppCompatActivity() {
@@ -12,7 +14,7 @@ class ProfileActivity : AppCompatActivity() {
         val user = intent.getParcelableExtra<User>("userData")
         if (user != null){
             val txtHiUser = findViewById<TextView>(R.id.txtHiUser)
-            txtHiUser.text = "Hi, ${user.nama}"
+            txtHiUser.text = "Hi, " + user.nama
 
             // Data ke cardview
             findViewById<TextView>(R.id.hasilNama).text = user.nama
@@ -21,6 +23,11 @@ class ProfileActivity : AppCompatActivity() {
             findViewById<TextView>(R.id.hasilGender).text = user.jenisKelamin
             findViewById<TextView>(R.id.hasilHobi).text = user.hobi
 
+        }
+        val btnJournal = findViewById<Button>(R.id.btnGoToJournal)
+        btnJournal.setOnClickListener {
+            val intent = Intent(this, MainActivity::class.java) // Kita asumsikan MainActivity adalah List Screen
+            startActivity(intent)
         }
 
     }

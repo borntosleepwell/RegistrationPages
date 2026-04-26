@@ -16,7 +16,7 @@
         android:textSize="48dp"
         android:textColor="@color/drk_color"
         android:fontFamily="@font/ppmondwest_regular"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="85dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"/>
@@ -63,8 +63,6 @@
         android:paddingEnd="24dp"
         android:layout_marginTop="24dp"
         android:textColor="@color/drk_color"
-        android:hint="enter your study program"
-        android:textColorHint="#D9D9D9"
         android:fontFamily="@font/neuemontreal_medium"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

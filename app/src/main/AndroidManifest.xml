@@ -12,6 +12,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TestPages">
         <activity android:name=".ProfileActivity" android:exported="false"/>
+        <activity android:name=".MainActivity" android:exported="false"/>
+        <activity android:name=".AddTaskActivity" />
         <activity
             android:name=".RegistrationActivity"
             android:exported="true">
